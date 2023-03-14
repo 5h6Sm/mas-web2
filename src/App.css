@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: TimesNewRoman;
+  src: url(./fonts/TimesNewRoman.ttf);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -46,6 +49,7 @@
 }
 
 body{
+  font-family: TimesNewRoman;
   background-color: #000;
   height:max-content;
   margin: 0;
@@ -61,7 +65,7 @@ body{
 }
 .top{
   width:100%;
-  padding:50px 0 50px 0;
+  padding:50px 0 px 0;
   display: flex;
   justify-content:space-between;
 }
@@ -69,6 +73,7 @@ body{
   width:100%;
   border: 1px #fff dashed;
   margin:1vw 0 1vw 0;
+  height:0;
 }
 .main_img{
   width:100%;
@@ -166,4 +171,45 @@ body{
 .project_view_title{
   font-size: 1.5vw;
   font-weight: bold;
+}
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-Navigation-line{
+  width:65%;
+}
+.text_img{
+  margin-top:5%;
+  margin-left:50vw;
+}
+.op>div{
+  display: flex;
+  align-items: center;
+}
+.navigation-text{
+  text-align: right;
+  height: fit-content;
+  width: fit-content;
+  margin-top: -50%;
+  margin-left: -120px;
+}
+.text{
+  margin-right:20%;
+  font-size: 1vw;
+}
+.op{
+  font-size: 1vw;
+  margin-bottom: 0.5vw;
+  /* margin-bottom: 0.5vw; */
+  text-align: right;
+}
+.MAS2ND{
+  font-weight: 500;
+  font-size: 3vw;
 }
