@@ -34,9 +34,12 @@
 }
 
 *{
-  padding: 0;
+  padding: 0; 
   margin: 0;
   text-align: left;
+}
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 .project_col{
   overflow: scroll;
@@ -53,7 +56,7 @@ body{
  
 }
 .all_wrapper{
-  width: 64.5%;
+  width: 64.7%;
   height:max-content;
 }
 .top{
@@ -97,6 +100,7 @@ body{
 }
 .tag{
   margin-bottom:0.3vw;
+  font-size: 1vw;
 }
 .title{
   margin-bottom:0.2vw;
@@ -115,7 +119,7 @@ body{
   width:72%;
   height:fit-content;
   overflow: hidden;
-  margin:1.5vw 0 0 1vw;
+  margin: 0.9vw 0 0 1vw;
 }
 .project_op{
   min-width:20vw;
@@ -139,13 +143,27 @@ body{
   bottom:0;
 }
 .intro{
-  font-size: 16px;
+  font-size: 0.8vw;
 }
 .skill_op{
-  font-size: 16px;
+  font-size: 1vw;
 }
 .op{
   font-size: 1vw;
   margin-bottom: 0.5vw;
   text-align: right;
+}
+.title{
+  font-size: 1vw;
+}
+.skill_op, .lisence_op, .email_op{
+  font-size: 1vw;
+}
+.project_view{
+  font-size: 1vw;
+  margin-bottom:0.5vw;
+}
+.project_view_title{
+  font-size: 1.5vw;
+  font-weight: bold;
 }

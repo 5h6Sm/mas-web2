@@ -18,20 +18,21 @@ function Top(){
   )
 }
 
-function Line(){
+const HorizonLine = ({ text }) => {
   return (
-    <div className="App-Navigation-line">
-      <div
-        style={{
-          width: "100%",
-          borderBottom: "1px dashed #fff",
-          lineHeight: "0.1em"
-        }}
-      >
-      </div>
+    <div
+      style={{
+        width: "65.5%",
+        textAlign: "center",
+        borderBottom: "1px datted #fff",
+        lineHeight: "1em",
+        margin: "10px 0 20px",
+      }}
+    >
+
     </div>
-  )
-}
+  );
+};
 
 function Main(){
   return (
@@ -69,9 +70,9 @@ function Main(){
     </div>
 
     <div class="project">
-        <h3>PROJECT</h3>
+        <div class = "project_view_title">PROJECT</div>
         <div class="indi_project inner_project">
-            <h4>개인 프로젝트</h4>
+            <div class = "project_view">개인 프로젝트</div>
             <div class="project_col">
                 <div class="indi_project_op1 project_op"></div>
                 <div class="indi_project_op2 project_op"></div>
@@ -82,7 +83,7 @@ function Main(){
             
         </div>
         <div class="group_project inner_project">
-            <h4>단체 프로젝트</h4>
+            <div class = "project_view">단체 프로젝트</div>
             <div class="project_col">
                 <div class="group_project_op1 project_op"></div>
                 <div class="group_project_op2 project_op"></div>
@@ -103,7 +104,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Top />
-        <Line />
+        <HorizonLine />
         <Main />
       </header>
     </div>
